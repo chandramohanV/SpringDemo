@@ -25,7 +25,17 @@ public class BookController {
 	}
 
 	@PostMapping("/counts")
-	void countPage() {
+	void createPage() {
+		counts = counts + 1;
+	}
+	
+	@PutMapping("/counts")
+	void updatePage() {
+		counts = counts + 1;
+	}
+	
+	@GetMapping("/counts")
+	void getPage() {
 		counts = counts + 1;
 	}
 
